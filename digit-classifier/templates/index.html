@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digit Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Handwritten Digit Classifier</h1>
+    <p>Click the squares below to "draw" a digit (0-9), then click Predict.</p>
+
+    <!-- This is where the 8x8 grid of clickable squares gets built by JavaScript -->
+    <div id="grid"></div>
+
+    <div class="buttons">
+      <button id="predictBtn">Predict</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
