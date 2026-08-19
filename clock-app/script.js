@@ -68,4 +68,11 @@ formatBtn.addEventListener("click", function () {
 // Toggle light/dark mode when the button is clicked
 themeBtn.addEventListener("click", function () {
   document.body.classList.toggle("light");
+
+  // Update the button text to say the opposite of what we're currently in
+  if (document.body.classList.contains("light")) {
+    themeBtn.textContent = "Switch to Dark Mode";
+  } else {
+    themeBtn.textContent = "Switch to Light Mode";
+  }
 });
